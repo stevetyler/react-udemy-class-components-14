@@ -12,7 +12,6 @@ class Users extends Component {
   }
 
   toggleUsersHandler() {
-    //this.state.showUsers = false
     this.setState((curState) => {
       return {
         showUsers: !curState.showUsers
@@ -28,8 +27,7 @@ class Users extends Component {
         ))}
       </ul>
     );
-
-    console.log('users list', usersList);
+    
     return (
       <div className={classes.users}>
         <button onClick={this.toggleUsersHandler.bind(this)}>
